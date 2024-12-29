@@ -1,0 +1,162 @@
+/* General body and HTML reset */
+body,
+html {
+ margin: 0;
+ padding: 0;
+ font-family: 'Arial', sans-serif;
+ background-color: #f7f7f7;
+}
+
+/* Header */
+header {
+ background-color: #333;
+ color: #fff;
+ padding: 10px 20px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+header .logo h1 {
+ font-size: 24px;
+ margin: 0;
+}
+
+/* Navigation Menu */
+nav {
+ position: relative;
+}
+
+.menu {
+ list-style: none;
+ display: flex;
+ gap: 20px;
+}
+
+.menu li a {
+ color: #fff;
+ padding: 10px 15px;
+ display: block;
+ text-align: center;
+ transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+ background-color: #4CAF50;
+ border-radius: 10px;
+}
+
+/* Hamburger Menu for Mobile */
+.menu-toggle {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ cursor: pointer;
+}
+
+.menu-toggle span {
+ background: #fff;
+ height: 3px;
+ width: 25px;
+ border-radius: 2px;
+ transition: all 0.3s ease;
+}
+
+/* Main Terms of Use Content */
+.terms-of-use-container {
+ max-width: 80%;
+ margin: 2rem auto;
+ padding: 1rem;
+ background-color: white;
+ border-radius: 8px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+ font-size: 2rem;
+ margin-bottom: 1rem;
+}
+
+h2 {
+ font-size: 1.5rem;
+ margin-top: 1.5rem;
+}
+
+p {
+ line-height: 1.6;
+ margin-bottom: 1rem;
+}
+
+a {
+ color: #007BFF;
+ text-decoration: none;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+
+/* AdSense Container */
+.adsense-container {
+ max-width: 1200px;
+ margin: 2rem auto;
+ text-align: center;
+}
+
+.adsbygoogle {
+ display: block;
+ margin: 0 auto;
+}
+
+/* Footer */
+footer {
+ background-color: #494949;
+ color: white;
+ padding: 0.3rem 0;
+ /* Reduced padding to make the footer smaller */
+ bottom: 0;
+ width: 100%;
+ text-align: center;
+ box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.footer-container {
+ max-width: 50%;
+ /* Maintain 50% width for the footer container */
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 1rem;
+ width: 100%;
+}
+
+.footer-left p {
+ font-size: 0.9rem;
+ /* Reduced font size */
+}
+
+.footer-right .footer-links {
+ list-style: none;
+ display: flex;
+ gap: 15px;
+ /* Reduced gap between footer links */
+ margin: 0;
+}
+
+.footer-right a {
+ color: white;
+ text-decoration: none;
+ font-size: 0.9rem;
+ /* Reduced font size for links */
+ transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+ color: #ff6347;
+ /* Tomato color on hover */
+}

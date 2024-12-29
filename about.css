@@ -1,0 +1,222 @@
+/* Global Styles */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: Arial, sans-serif;
+}
+
+body {
+ background-color: #f4f4f9;
+ color: #333;
+ line-height: 1.6;
+ min-height: 100vh;
+ /* Ensure the body takes the full height of the viewport */
+ display: flex;
+ flex-direction: column;
+}
+
+/* Navbar Styles */
+/* Header */
+header {
+ background-color: #333;
+ color: #fff;
+ padding: 10px 20px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+header .logo h1 {
+ font-size: 24px;
+ margin: 0;
+}
+
+/* Navigation Menu */
+nav {
+ position: relative;
+}
+
+.menu {
+ list-style: none;
+ display: flex;
+ gap: 20px;
+}
+
+.menu li a {
+ color: #fff;
+ padding: 10px 15px;
+ display: block;
+ text-align: center;
+ transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+ background-color: #4CAF50;
+ border-radius: 10px;
+}
+
+/* Hamburger Menu for Mobile */
+.menu-toggle {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ cursor: pointer;
+}
+
+.menu-toggle span {
+ background: #fff;
+ height: 3px;
+ width: 25px;
+ border-radius: 2px;
+ transition: all 0.3s ease;
+}
+
+/* Main Content Styles */
+main {
+ flex: 1;
+ /* This will allow the main content to take up the available space */
+}
+
+.about-container {
+ max-width: 800px;
+ margin: 3rem auto;
+ padding: 0 1rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.about-content {
+ display: flex;
+ gap: 2rem;
+ align-items: center;
+ margin-bottom: 2rem;
+ width: 100%;
+}
+
+.author-photo {
+ flex: 0 0 150px;
+ /* Set fixed width for the photo */
+}
+
+.author-photo .photo {
+ width: 100%;
+ height: auto;
+ border-radius: 50%;
+ /* Circular photo */
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bio {
+ flex: 1;
+}
+
+.bio h2 {
+ font-size: 1.8rem;
+ font-weight: bold;
+ margin-bottom: 1rem;
+}
+
+.bio p {
+ font-size: 1rem;
+ color: #555;
+ line-height: 1.6;
+ margin-bottom: 1rem;
+}
+
+.social-links-container {
+ text-align: center;
+ width: 100%;
+}
+
+.social-links {
+ list-style: none;
+ display: flex;
+ gap: 20px;
+ justify-content: center;
+ margin: 0;
+}
+
+.social-icon {
+ text-decoration: none;
+ color: #fff;
+ background-color: #494949;
+ padding: 0.5rem 1rem;
+ border-radius: 5px;
+ font-size: 1.2rem;
+ transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+ background-color: #ff6347;
+}
+
+/* Footer */
+footer {
+ background-color: #494949;
+ color: white;
+ padding: 0.3rem 0;
+ /* Reduced padding to make the footer smaller */
+ bottom: 0;
+ width: 100%;
+ text-align: center;
+ box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.footer-container {
+ max-width: 50%;
+ /* Maintain 50% width for the footer container */
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 1rem;
+ width: 100%;
+}
+
+.footer-left p {
+ font-size: 0.9rem;
+ /* Reduced font size */
+}
+
+.footer-right .footer-links {
+ list-style: none;
+ display: flex;
+ gap: 15px;
+ /* Reduced gap between footer links */
+ margin: 0;
+}
+
+.footer-right a {
+ color: white;
+ text-decoration: none;
+ font-size: 0.9rem;
+ /* Reduced font size for links */
+ transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+ color: #ff6347;
+ /* Tomato color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+ .about-content {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .author-photo {
+  margin-bottom: 1rem;
+ }
+
+ .bio h2 {
+  text-align: center;
+ }
+}
